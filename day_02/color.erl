@@ -13,7 +13,7 @@
 % defining a macro, andalso is the short-circuit AND
 -define(is_channel(V), (is_float(V) andalso V >= 0.0 andalso V =< 1.0)).
 
-new(R,G,B,A) when ?is_channel(R), ?is_channel(G), 
+new(R,G,B,A) when ?is_channel(R), ?is_channel(G),
                   ?is_channel(B), ?is_channel(A) ->
 
     #{red => R, green => G, blue => B, alpha => A}.
