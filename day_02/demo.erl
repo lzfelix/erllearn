@@ -10,12 +10,10 @@ fac(1) ->
 fac(N) ->
     N * fac(N - 1).
 
-% Atom example, pass inch or centimeter for different conversion. The atom is called clause, 
+% Atom example, pass inch or centimeter for different conversion. The atom is called clause,
 % on this case.
 convert(M, inch) ->
-    M / 2.54;
+    {M / 2.54, centimeter};
 
 convert(M, centimeter) ->
-    M * 2.54.
-
-
+    {M * 2.54, inch}.

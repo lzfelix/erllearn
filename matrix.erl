@@ -5,7 +5,7 @@
 %% behaviour, BEFORE running matrix:multiply, run shell:strings(false) to disable
 %% auto-encoding. When finished, run shell:strings(true) to reset the defaults.
 
-%% 30-09-2015 QUT // Parallel Computing
+%% 29-09-2015 QUT // Parallel Computing
 
 -module(matrix).
 -export([multiply/2]).
